@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/loginForm/static/css/main.9f62b534.css",
+    "main.js": "/loginForm/static/js/main.dd31724f.js",
+    "static/media/bg.jpg": "/loginForm/static/media/bg.6c96898a999a0e99e4f5.jpg",
+    "index.html": "/loginForm/index.html",
+    "main.9f62b534.css.map": "/loginForm/static/css/main.9f62b534.css.map",
+    "main.dd31724f.js.map": "/loginForm/static/js/main.dd31724f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f62b534.css",
+    "static/js/main.dd31724f.js"
+  ]
+}
