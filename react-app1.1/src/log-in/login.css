@@ -74,17 +74,17 @@
     background: rgb(4, 90, 4);
     transform:scale(1.05) ;
 }
-.form-container .login-link-con{
+.form-container .signup-link-con{
     display: flex;
     justify-content: center;
     margin-bottom: 5rem;
     gap: 5px;
 }
-.form-container .login-link-con .login-link{
+.form-container .signup-link-con .signup-link{
     background: none;
     border: none;
     font-size: 15px;
+    cursor: pointer;
     color: rgb(58, 137, 255);
     text-decoration: underline;
-    cursor: pointer;
 }

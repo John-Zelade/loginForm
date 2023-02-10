@@ -1,16 +1,22 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import './sign-up/signup.css';
-import Signup from './sign-up/signup'
+import './log-in/login.css';
+import {Signup} from './sign-up/signup'
+import {Login}  from "./log-in/login"
 
-class App  extends Component {
-
-    render() { 
+function App(){
+    const [currentForm, setCurrentState]=useState('Login');
+    const toggleForm = (fromName) =>{
+        setCurrentState(fromName);
+    }
         return (
             <div className='App'>
-                <Signup />
+                {
+                    currentForm ==="Login" ? <Login onFormSwitch={toggleForm} /> : <Signup onFormSwitch={toggleForm} />
+                }
             </div>
         );
     }
-}
- 
+
+
 export default App ;
