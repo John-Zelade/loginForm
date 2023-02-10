@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './sing-up/signup.css';
-import Signup from './sing-up/signup'
+import './sign-up/signup.css';
+import Signup from './sign-up/signup'
 
 class App  extends Component {
 
