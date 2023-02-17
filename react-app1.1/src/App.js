@@ -6,8 +6,8 @@ import {Login}  from "./log-in/login"
 
 function App(){
     const [currentForm, setCurrentState]=useState('Login');
-    const toggleForm = (fromName) =>{
-        setCurrentState(fromName);
+    const toggleForm = (formName) =>{
+        setCurrentState(formName);
     }
         return (
             <div className='App'>
@@ -18,5 +18,5 @@ function App(){
         );
     }
 
-
+    
 export default App ;
