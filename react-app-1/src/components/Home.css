@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+}
+.home .text-con{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: slideInLeft 1.5s ease-out 0s 1 ;
+}
+.text-con .typing-text{
+    color: rgb(255, 174, 0);
+    font-size:2rem;
+}
+img{
+    height: 30rem;
+    width: 30rem;
+    animation: upDown 3s infinite;
+}
+.image-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideInRight 1.5s ease-out 0s 1 ;
+}
+.btn{
+    --color: rgb(0, 136, 255);
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+   }
+   .btn {
+    width: 140px;
+    height: 50px;
+    background: linear-gradient(to top, #00154c, #12376e, #23487f);
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  
+  .btn span {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: top 0.5s;
+  }
+  
+  .btn-text-one {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    color: #fff;
+    transform: translateY(-50%);
+  }
+  
+  .btn-text-two {
+    color: #ffff;
+    position: absolute;
+    width: 100%;
+    top: 150%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .btn:hover .btn-text-one {
+    top: -100%;
+  }
+  
+  .btn:hover .btn-text-two {
+    top: 50%;
+  }
+  
+@keyframes slideInRight{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes slideInLeft{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes upDown{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+
